@@ -58,8 +58,7 @@
 | `white_bk.svg` | 备用背景 → 深色 |
 | `page_open.svg` | 翻页箭头 → 白色 |
 | `toast.xml` / `toast_bk.svg` / `toast_en.svg` / `toast_zhong.svg` | 中英切换提示 → 深色 |
-
-**关键技术点**（踩坑记录）：v0.7 候选框背景由 ImeService.exe 硬编码 `file='bk_image_%d.svg'` 加载，
+v0.7 候选框背景由 ImeService.exe 硬编码 `file='bk_image_%d.svg'` 加载，
 不是 window.xml 里写的 `white_bk.svg`。只改 white_bk.svg 背景不会变化（候选字变白后看不见）。
 
 ### 2. 设置界面深色补丁
@@ -81,8 +80,6 @@
 **使用**：
 - 双击 `一键应用深色.bat` 应用深色（含设置界面）
 - 双击 `一键恢复浅色.bat` 恢复官方原版（`light\` 含完整 49 文件）
-
-详见 [v0.7.0/PATCH-说明.md](./v0.7.0/PATCH-说明.md)。
 
 ---
 
