@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window caption="wholewindow">
+    <Font name="word" facename="Microsoft YaHei" size="19"/>
+    <Font name="number" facename="Microsoft YaHei" size="16"/>
+    <Class name="index_style" width="auto" height="auto" font="number" padding="0,0,3,0" textcolor="#CCFFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="cand_style" width="auto" height="auto" maxwidth="matchparent" ellipsis="3" font="word" textcolor="#E6FFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="more_cand_style" maxwidth="matchparent" ellipsis="3" font="word" textcolor="#E6FFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="cand_container" width="auto" height="auto" maxwidth="matchparent" maxheight="matchparent" mousechild="false" inset="8,3,8,4" statetochild="true" 
+            selectedbkcolor="#FF4F84FF" bkround="7"/>
+    <Class name="more_cand_container" maxwidth="matchparent" mousechild="false" inset="8,3,8,4" statetochild="true" 
+            selectedbkcolor="#FF4F84FF" bkround="7"/>
+    <TabLayout width="612" height="auto" selectedid="0" inset="24,24,24,24" bkimage="file='white_bk.svg' corner='40,40,40,40'">
+        <HorizontalLayout name="h_layout" width="564" height="41" inset="5,5,12,5">
+            <HorizontalLayout name="candlists" height="31" count="9" childpadding="5">
+                <HorizontalOption name="candidate" group="cands" class="cand_container">
+                    <Option text="0" text_calc="0" class="index_style"/>
+                    <Option text="" class="cand_style"/>
+                </HorizontalOption>
+            </HorizontalLayout>
+            <Control width="12"/>
+            <Button name="page_open" width="20" height="20" foreimage="file='page_open.svg' size='16,16'"/>
+        </HorizontalLayout>
+
+        <MoreCands name="v_layout" width="564" height="185" count="54" mouse="true" inset="5,5,24,5" bkround="7" columns="6" rows="5" vscrollbar="true" childpadding="5" childvpadding="5">
+            <HorizontalOption name="candidate_more" group="cands_more" class="more_cand_container">
+                <Option text="0" text_calc="0" class="index_style"/>
+                <Option text="" class="more_cand_style"/>
+            </HorizontalOption>
+        </MoreCands>
+        
+    </TabLayout>
+</Window>
