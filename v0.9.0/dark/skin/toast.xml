@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="252,96">
+    <Font name="sans_18" facename="Noto Sans SC" size="18"/>
+    <HorizontalLayout inset="28,23,28,33" bkimage="file='toast_bk.svg'">
+        <Control name="tips_icon" width="16" height="16" bkimage="toast_en.svg"/>
+        <Control width="12"/>
+        <Label name="tips" text="中文" font="sans_18" align="vcenter,left" textcolor="#FFE6E6E6"/>
+    </HorizontalLayout>
+</Window>

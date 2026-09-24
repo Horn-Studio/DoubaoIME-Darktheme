@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window caption="wholewindow">
+    <Font name="word" facename="Microsoft YaHei" size="19"/>
+    <Font name="number" facename="Microsoft YaHei" size="16"/>
+    <Class name="index_style" font="number" textcolor="#CCFFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="cand_style" width="auto" maxwidth="matchparent" ellipsis="3" font="word" textcolor="#E6FFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="more_cand_style" align="left|vcenter" maxwidth="matchparent" ellipsis="3" font="word" textcolor="#E6FFFFFF" selectedtextcolor="#FFFFFFFF"/>
+    <Class name="cand_container" width="auto" maxwidth="matchparent" mousechild="false" statetochild="true" 
+            selectedbkcolor="#FF4F84FF"/>
+    <Class name="more_cand_container" maxwidth="matchparent" mousechild="false" statetochild="true" 
+            selectedbkcolor="#FF4F84FF" />
+    <Class name="scroll_style" width="9" thumbnormalcolor="#14FFFFFF" thumbhotcolor="#28FFFFFF" bkround="5" thumb_width="5"/>
+    <TabLayout width="auto" height="auto" selectedid="0" inset="24,24,24,24" bkimage="file='white_bk.svg' corner='40,40,40,40'">
+        <HorizontalLayout name="h_layout" width="auto" height="auto">
+            <CandItemBox name="candlists" count="9" childpadding="5">
+                <CandItem name="candidate" group="cands" class="cand_container">
+                    <CandItemIndex text="0" text_calc="0" class="index_style"/>
+                    <Option text="" class="cand_style"/>
+                </CandItem>
+            </CandItemBox>
+            <CandOpenButton name="page_open" foreimage="file='page_open.svg' svgsize='20,20'"/>
+        </HorizontalLayout>
+
+        <MoreCands name="v_layout" count="54" mouse="true" columns="6" rows="5" vscrollbarstyle="scroll_style">
+            <CandItem name="candidate_more" group="cands_more" class="more_cand_container">
+                <CandItemIndex text="0" text_calc="0" class="index_style"/>
+                <Option text="" class="more_cand_style"/>
+            </CandItem>
+        </MoreCands>
+        
+    </TabLayout>
+</Window>
