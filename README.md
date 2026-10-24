@@ -1,5 +1,5 @@
 # DoubaoIME-Darktheme
-
+**官方已添加深色模式，此项目已归档。**
 豆包输入法（Doubao IME）深色主题补丁集合 · Dark theme patches for DoubaoIME
 
 为豆包输入法 Windows 版提供官方暂未提供的深色主题。
